@@ -1,0 +1,129 @@
+/* Container */
+.admin-posts {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.admin-posts h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+/* Each Post Card */
+.admin-post-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  transition: all 0.2s ease-in-out;
+}
+
+.admin-post-card:hover {
+  background: #f5f5f5;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Post Info */
+.admin-post-info {
+  flex: 1;
+}
+
+.admin-post-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #111;
+}
+
+.admin-post-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  font-size: 13px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.badge.trending {
+  background: #FFD700;
+  color: #111;
+}
+
+.badge.latest {
+  background: #00C853;
+  color: #fff;
+}
+
+/* Buttons */
+.admin-actions button {
+  margin-left: 8px;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+}
+
+.admin-actions button svg {
+  font-size: 16px;
+}
+
+/* Button Colors */
+.btn-edit {
+  background-color: #1976d2;
+  color: #fff;
+}
+.btn-edit:hover {
+  background-color: #125a9c;
+}
+
+.btn-delete {
+  background-color: #e53935;
+  color: #fff;
+}
+.btn-delete:hover {
+  background-color: #b71c1c;
+}
+
+.btn-trending {
+  background-color: #444;
+  color: #fff;
+}
+.btn-trending.active {
+  background-color: #FFD600;
+  color: #111;
+}
+.btn-trending:hover {
+  opacity: 0.9;
+}
+
+.btn-latest {
+  background-color: #444;
+  color: #fff;
+}
+.btn-latest.active {
+  background-color: #00C853;
+  color: #fff;
+}
+.btn-latest:hover {
+  opacity: 0.9;
+}

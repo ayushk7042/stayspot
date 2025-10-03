@@ -1,0 +1,231 @@
+.hero-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 480px;
+  margin: 2rem auto 4rem auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1s ease, transform 1.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.hero-slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+  transition: transform 5s ease;
+}
+.hero-slide.active .hero-slide-bg {
+  transform: scale(1.1);
+}
+
+.hero-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: 1;
+}
+
+.hero-slide-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 750px;
+  padding: 1.5rem;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-icon-box {
+  margin-bottom: 1rem;
+}
+.hero-icon {
+  color: #00d4ff;
+  filter: drop-shadow(0 0 12px #00d4ff);
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+.hero-excerpt {
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  color: #e0f7ff;
+}
+
+.hero-read-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: #00d4ff;
+  color: #00334e;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero-read-btn:hover {
+  background: #009fc2;
+}
+
+/* Navigation */
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  z-index: 3;
+}
+.hero-nav:hover {
+  background: rgba(0,0,0,0.65);
+}
+.hero-nav.prev {
+  left: 15px;
+}
+.hero-nav.next {
+  right: 15px;
+}
+
+/* Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+.hero-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.hero-dot.active {
+  background: #00d4ff;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.hero-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 480px;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.7s cubic-bezier(.55,0,.1,1);
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
+  transform: scale(1.02);
+}
+
+.hero-slide-bg {
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.65) blur(2px);
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.hero-overlay-gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(33,40,49,.80) 25%, rgba(33,40,49,0.05) 90%);
+  z-index: 1;
+}
+
+.hero-slide-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 600px;
+  padding: 80px 48px;
+  margin-left: 2rem;
+}
+
+.hero-icon-box {
+  display: flex; align-items: center; justify-content: flex-start;
+  margin-bottom: 16px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 50%;
+  width: 88px; height: 88px;
+  box-shadow: 0 2px 8px rgba(34,197,94,0.3);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 8px 0;
+  text-shadow: 0 0 12px #212831;
+}
+
+.hero-excerpt {
+  opacity: 0.95;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+.hero-read-btn {
+  background: linear-gradient(90deg, #3ecf8e, #38bdf8);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 12px 36px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.12rem;
+  box-shadow: 0 2px 8px #38bdf844;
+  margin-top: 8px;
+}
+
+/* Navigation & Dots styling goes here */

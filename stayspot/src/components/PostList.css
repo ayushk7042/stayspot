@@ -1,0 +1,349 @@
+/* .postlist-container {
+  gap: 28px;
+  padding: 0 12px;
+}
+
+.postlist-container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.postlist-container.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 32px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  outline-offset: 3px;
+}
+
+.post-card:hover,
+.post-card:focus-visible {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgb(0 0 0 / 0.15);
+  outline: none;
+}
+
+/* Link wrapper inside card */
+.post-card-link {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Image container */
+.post-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #ebeef1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  border-radius: 14px 14px 0 0;
+  transition: filter 0.4s ease;
+}
+
+.post-card:hover .post-image,
+.post-card:focus-visible .post-image {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.post-image-placeholder {
+  color: #999;
+  font-size: 1.1rem;
+  font-style: italic;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 14px 14px 0 0;
+}
+
+/* Content inside card */
+.post-content-wrapper {
+  padding: 20px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+  min-height: 52px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-excerpt {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: auto;
+  line-height: 1.5;
+  overflow: hidden;
+  max-height: 72px;
+  text-overflow: ellipsis;
+}
+
+/* Meta info container */
+.post-meta {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-weight: 600;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+.meta-item.category {
+  color: #6278f7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.meta-item.author {
+  color: #e07b39;
+}
+
+.meta-item.reading-time {
+  color: #38a169;
+}
+
+.meta-item.date {
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 600px) {
+  .postlist-container.grid {
+    grid-template-columns: 1fr;
+  }
+  .post-image-wrapper {
+    height: 180px;
+  }
+  .post-excerpt {
+    max-height: none; /* allow longer excerpts on mobile */
+  }
+} */
+
+
+
+
+
+/* ===== PostList Styling Upgrade ===== */
+
+.post-card {
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover, .post-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.post-image-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 14px 14px 0 0;
+}
+.post-card:hover .post-image {
+  transform: scale(1.08);
+}
+.badge-new {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Content */
+.post-content-wrapper {
+  padding: 1rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.post-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  transition: color 0.2s ease;
+}
+.post-card:hover .post-title {
+  color: #2563eb;
+}
+
+/* Excerpt */
+.post-excerpt {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #4a4a4a;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.toggle-excerpt {
+  margin-top: 4px;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+}
+.toggle-excerpt:hover {
+  text-decoration: underline;
+}
+
+/* Meta */
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  align-items: center;
+}
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+.meta-item.category {
+  background: #eef2ff;
+  color: #3730a3;
+}
+.meta-item.author {
+  background: #fff7ed;
+  color: #b45309;
+}
+.meta-item.reading-time {
+  background: #ecfdf5;
+  color: #047857;
+}
+.meta-item.date {
+  color: #6b7280;
+  font-style: italic;
+}
+.meta-item.share-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+.meta-item.share-button:hover {
+  transform: scale(1.2);
+}
+
+/* Tags */
+.post-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag-link {
+  padding: 4px 10px;
+  background: #f3f4f6;
+  color: #111827;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.tag-link:hover {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  animation: fadeIn 0.3s ease;
+}
+.lightbox-image {
+  animation: zoomIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+@keyframes zoomIn {
+  from {transform: scale(0.8); opacity:0;}
+  to {transform: scale(1); opacity:1;}
+}
+
+
+
+
+
+
+

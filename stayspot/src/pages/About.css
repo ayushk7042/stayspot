@@ -1,0 +1,22 @@
+.about-page { font-family: 'Segoe UI', Arial, sans-serif; color: #244c63; }
+.about-hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+  background: linear-gradient(135deg, #abe9cd 40%, #3b82f6 100%);
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.about-hero-icon { color: #fff; margin-bottom: 1rem; }
+.about-mission, .about-values, .about-story, .about-features, .about-team { max-width: 900px; margin: 2.5rem auto; }
+.about-values-list { display: flex; gap: 2rem; justify-content: center; margin-top: 1rem; }
+.about-values-list div { text-align: center; font-weight: 600; color: #3b82f6; }
+.about-features ul { list-style: none; padding: 0; font-size: 1.12rem; }
+.about-features li { margin: 0.75rem 0; display: flex; align-items: center; gap: 0.8rem; }
+.about-team-list { display: flex; gap: 2.2rem; justify-content: center; margin-top: 2rem; }
+.about-team-list div { background: #f1f8fb; border-radius: 16px; box-shadow: 0 4px 12px #ace3e7; padding: 1rem 1.5rem; text-align: center; flex: 1; }
+.about-team-list img { width: 80px; border-radius: 50%; margin-bottom: 0.5rem; }
+@media (max-width: 700px) {
+  .about-team-list { flex-direction: column; gap: 1.3rem; }
+  .about-hero, .about-mission, .about-values, .about-story, .about-features, .about-team { padding: 1rem; }
+}

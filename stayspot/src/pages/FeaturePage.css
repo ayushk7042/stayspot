@@ -1,0 +1,114 @@
+.feature-page {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #17416c;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1rem;
+  background: #f4fbfc;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #ace3e7;
+  text-align: center;
+  min-height: 400px;
+}
+
+.feature-header {
+  margin-bottom: 2rem;
+}
+.feature-page .feature-icon {
+  color: #3abff8;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 8px #82edeb);
+}
+.feature-page h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+.feature-page p {
+  font-size: 1.25rem;
+  max-width: 540px;
+  margin: 0 auto;
+  color: #244c63;
+}
+.feature-page {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #17416c;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1rem;
+  background: #f4fbfc;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #ace3e7;
+  text-align: center;
+  min-height: 400px;
+}
+.feature-header {
+  margin-bottom: 2.2rem;
+}
+.feature-icon {
+  color: #3abff8;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 8px #82edeb);
+}
+.feature-page h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+.feature-page h2 {
+  font-size: 1.35rem;
+  color: #194778;
+  margin: 1.4rem 0 0.6rem 0;
+}
+.feature-page p {
+  font-size: 1.21rem;
+  max-width: 540px;
+  margin: 0 auto 1.5rem auto;
+  color: #244c63;
+}
+.feature-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.3rem 0;
+  font-size: 1.07rem;
+}
+.feature-page ul li {
+  margin: 0.85rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  justify-content: center;
+}
+.feature-page a {
+  color: #2bbdff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.map-embed {
+  margin: 1rem 0;
+}
+.author-list { margin-top: 0.7rem; }
+.author-list div { margin: 0.7rem 0; }
+.feature-form {
+  display: flex; gap: 0.8rem; justify-content: center; margin-top: 1rem;
+}
+.feature-form input[type="email"] {
+  padding: 0.7rem 1.1rem;
+  border-radius: 8px;
+  border: 1.5px solid #3abff8;
+  font-size: 1.12rem;
+  margin-right: 0.6em;
+}
+.feature-form button {
+  background: linear-gradient(90deg,#31acf2,#57c6f6);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.09rem;
+  cursor: pointer;
+  box-shadow: 0 1px 8px #82edeb;
+  transition: background 0.18s;
+}
+.feature-form button:hover { background: linear-gradient(90deg,#1694d8,#57c6f6); }
