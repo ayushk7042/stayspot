@@ -57,16 +57,16 @@ const Contact = () => {
 
       <section className="contact-details">
         <div>
-          <FaMapMarkerAlt size={20} /> Office: 123 Eco St., Green City, India
+          <FaMapMarkerAlt size={20} /> Office: Aff allainces, Gurgaon Sec 62, India
         </div>
         <div>
-          <FaPhone size={20} /> +91-9823456789
+          <FaPhone size={20} /> +91-7042070261
         </div>
         <div>
-          <FaEnvelope size={20} /> info@feedtag.com
+          <FaEnvelope size={20} /> ayush@affallainces.com
         </div>
         <div>
-          <FaWhatsapp size={20} /> Whatsapp: +91-9823456789
+          <FaWhatsapp size={20} /> Whatsapp: +91-7042070261
         </div>
       </section>
 
@@ -103,7 +103,7 @@ const Contact = () => {
               <input
                 id="email"
                 name="email"
-                placeholder="you@example.com"
+                placeholder="ayush@affallainces.com"
                 type="email"
                 value={form.email}
                 onChange={handleChange}

@@ -8,14 +8,22 @@ import { useAuth } from "../context/AuthContext.jsx";
 import AdminHomePosts from "./AdminHomePosts.jsx";
 import AdminAllPosts from "./AdminAllPosts.jsx"; // adjust path as needed
 
+//import ManageSubcategories from "./ManageSubcategories.jsx";
+
+import ManageLogo from "./ManageLogo.jsx";  // new import
+//import { FaImage } from "react-icons/fa";   // for logo icon
+
 //import CreatePostForm from "../components/CreatePostForm.jsx";
-import { FaRegNewspaper, FaFolderOpen, FaChartBar, FaSignOutAlt, FaUserCircle,  } from "react-icons/fa";
+import { FaRegNewspaper, FaFolderOpen, FaChartBar, FaSignOutAlt, FaUserCircle,FaImage  } from "react-icons/fa";
 
 const tabs = [
   { id: "posts", label: "Posts", icon: FaRegNewspaper, component: ManagePosts },
   { id: "categories", label: "Categories", icon: FaFolderOpen, component: ManageCategories },
   { id: "analytics", label: "Analytics", icon: FaChartBar, component: Analytics },
-  { id: "all-posts", label: "All Posts", icon: FaRegNewspaper, component: AdminHomePosts }
+  { id: "all-posts", label: "All Posts", icon: FaRegNewspaper, component: AdminHomePosts },
+  { id: "logo", label: "Manage Logo", icon: FaImage, component: ManageLogo },
+
+  // { id: "subcategories", label: "Subcategories", icon: FaFolderOpen, component: ManageSubcategories }, // NEW
   //{ id: "allposts", label: "All Posts", icon: FaRegNewspaper, component: AdminAllPosts }, 
   //{ id: "create", label: "Create Post", icon: FaPlusCircle, component: CreatePostForm }, // Add your form here
 ];
